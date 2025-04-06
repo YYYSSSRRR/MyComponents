@@ -1,0 +1,116 @@
+.btn {
+  font-weight: 300;
+  line-height: normal;
+  color: red;
+  white-space: nowrap;
+  text-align: center;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 7px;
+  font-size: 7px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: black;
+}
+
+.btn-lg {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.btn-sm {
+  padding: 0.5rem;
+  font-size: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn-primary {
+  background-color: #3875F6;
+  border-color: transparent;
+  color: white;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: rgb(92.5949519231, 142.3774038462, 247.6550480769);
+  border-color: rgba(25.5, 25.5, 25.5, 0);
+}
+
+.btn-default {
+  background-color: white;
+  border-color: grey;
+  color: black;
+}
+.btn-default:hover {
+  color: black;
+  background-color: white;
+  border-color: rgb(153.5, 153.5, 153.5);
+}
+
+.btn-danger {
+  background-color: white;
+  border-color: #EC6A5E;
+  color: #EC6A5E;
+}
+.btn-danger:hover {
+  color: #EC6A5E;
+  background-color: white;
+  border-color: rgb(241.3833333333, 148.2166666667, 139.6166666667);
+}
+
+.btn-default:hover {
+  border-color: #3875F6;
+  color: #3875F6;
+}
+
+.btn-link {
+  color: #3875F6;
+  text-decoration: underline 1px #3875F6;
+  border: none;
+}
+
+.viking-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 0.5rem;
+  list-style: none;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.menu-items {
+  padding: 2px 2px;
+  cursor: pointer;
+  line-height: 0.5rem;
+}
+.menu-items:hover {
+  color: #ff0000;
+}
+.menu-items.is-disable {
+  pointer-events: none;
+  cursor: default;
+}
+.menu-items.is-active {
+  color: red;
+  text-decoration: underline red;
+}
+
+.menu-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.menu-vertical .menu-items.is-active {
+  color: red;
+  border-left: 1px solid red;
+  border-bottom: none;
+}
+
+.is-disable {
+  color: grey;
+  text-decoration: none;
+  cursor: default;
+}
+
+/*# sourceMappingURL=index.css.map */

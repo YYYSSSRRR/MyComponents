@@ -1,0 +1,42 @@
+.viking-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 0.5rem;
+    list-style: none;
+    flex-direction: row;
+    gap: 5px;
+}
+.menu-items{
+    padding:2px 2px;
+    cursor: pointer;
+    line-height: 0.5rem;
+    &:hover{
+        color: #ff0000;
+    }
+    &.is-disable{
+        pointer-events: none;
+        cursor: default;
+    }
+    &.is-active{
+        color: red;
+        text-decoration: underline red;
+    }
+    
+}
+.menu-vertical{
+    display: flex;
+    flex-direction: column;
+    .menu-items{
+        &.is-active{
+            color: red;
+            border-left: 1px solid red;
+            border-bottom: none;
+        }
+    }
+    
+}
+.is-disable{
+    color: grey;
+    text-decoration: none;
+    cursor: default;
+}

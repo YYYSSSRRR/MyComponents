@@ -1,0 +1,39 @@
+@import './../../styles/mixin';
+.btn{
+    font-weight: 300;
+    line-height: normal;
+    color: red;
+    white-space: nowrap;
+    text-align: center;
+    background-color: white;
+    border: 1px solid grey;
+    @include buttonSize(7px,7px,7px);
+    cursor: pointer;
+    &:hover{
+        background-color: black;
+    }
+}
+.btn-lg{
+    @include buttonSize(01rem,1rem,1rem);
+}
+.btn-sm{
+    @include buttonSize(0.5rem,0.5rem,0.5rem);
+}
+.btn-primary{
+    @include buttonType(#3875F6,transparent,white)
+}
+.btn-default{
+    @include buttonType(white,grey,black)
+}
+.btn-danger{
+    @include buttonType(white,#EC6A5E,#EC6A5E)
+}
+.btn-default:hover{
+    border-color: #3875F6;
+    color: #3875F6;
+}
+.btn-link{
+    color:#3875F6;
+    text-decoration: underline 1px #3875F6;
+    border: none;
+}

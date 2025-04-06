@@ -1,0 +1,23 @@
+
+@mixin buttonSize($padding,$font-size,$border-raduis){
+    padding:$padding;
+    font-size:$font-size;
+    border-radius: $border-raduis;
+}
+@mixin buttonType(
+    $background,
+    $border,
+    $color,
+    $hover-background: lighten($background,7.5%),
+    $hover-border: lighten($border,10%),
+    $hover-color: $color
+    ){
+    background-color: $background;
+    border-color: $border;
+    color:$color;
+    &:hover{
+        color: $color;
+        background-color: $hover-background;
+        border-color: $hover-border;
+    }
+}
